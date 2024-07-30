@@ -1,9 +1,9 @@
 ---
-title: "Contributing to Parquet"
-linkTitle: "Contributing to Parquet"
+title: "Contributing to Parquet-Java"
+linkTitle: "Contributing to Parquet-Java"
 weight: 3
 description: >
-  How to contribute to Parquet
+  How to contribute to Parquet-Java
 ---
 
 Pull Requests
@@ -16,7 +16,7 @@ We prefer to receive contributions in the form of GitHub pull requests. Please s
 3.  Submit the patch as a GitHub pull request against the master branch. For a tutorial, see the GitHub guides on forking a repo and sending a pull request. Prefix your pull request name with the Issue `GH-2935`: (ex: [https://github.com/apache/parquet-java/pull/2951](https://github.com/apache/parquet-java/pull/2951)).
 4.  Make sure that your code passes the unit tests. You can run the tests with `mvn test` in the root directory.
 5.  Add new unit tests for your code.
-6.  All Pull Requests are tested automatically on [GitHub Actions](https://github.com/apache/parquet-mr/actions).
+6.  All Pull Requests are tested automatically on [GitHub Actions](https://github.com/apache/parquet-java/actions).
 
 If you’d like to report a bug but don’t have time to fix it, you can still [raise an issue](https://github.com/apache/parquet-java/issues), or email the mailing list ([dev@parquet.apache.org](mailto:dev@parquet.apache.org)).
 
@@ -25,7 +25,7 @@ Committers
 
 ### Merging a Pull Request
 
-Merging a pull request requires being a committer on the project.
+Merging a pull request requires being a committer on the project and approval of the PR by a committer who is not the author.
 
 A pull request can be merged through the GitHub UI. By default, only [squash and merge](https://github.com/apache/parquet-java/blob/824b7d009eb41539cb0e2f73110efc0ac5694251/.asf.yaml#L29) is enabled on the project.
 
@@ -42,7 +42,7 @@ Once a PR has been merged to master, it can be that the commit needs to be backp
 Make sure that the remote is set up correctly:
 
 ```sh
-git remote add github-apache git@github.com:apache/parquet-mr.git
+git remote add github-apache git@github.com:apache/parquet-java.git
 ```
 
 Now you can cherry-pick a PR to a previous branch:
